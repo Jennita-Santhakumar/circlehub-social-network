@@ -1,0 +1,181 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color-scheme: light dark;
+  --accent: #6366f1;
+  --bg: #0f0f14;
+  --surface: #1a1a24;
+  --text: #f2f2f7;
+  --muted: #8888a0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app__main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid #2a2a38;
+}
+
+.navbar a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.auth-page {
+  max-width: 360px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-form input,
+.post-card__comment-form input,
+.modal textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: var(--surface);
+  color: var(--text);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: var(--accent);
+  color: white;
+}
+
+.feed__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-card {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.post-card__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+.post-card__actions {
+  display: flex;
+  gap: 16px;
+  margin: 8px 0;
+}
+
+.post-card__actions button.liked {
+  background: #ef4444;
+}
+
+.post-card__comments {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  color: var(--muted);
+}
+
+.post-card__comment-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--surface);
+  padding: 24px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.modal textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.notification-bell {
+  position: relative;
+}
+
+.notification-bell__dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: var(--surface);
+  border: 1px solid #2a2a38;
+  border-radius: 8px;
+  list-style: none;
+  padding: 8px;
+  width: 240px;
+}
+
+.badge {
+  background: #ef4444;
+  border-radius: 50%;
+  padding: 0 6px;
+  font-size: 0.7em;
+}
+
+.error {
+  color: #ef4444;
+}
+
+.profile__stats {
+  display: flex;
+  gap: 16px;
+}
