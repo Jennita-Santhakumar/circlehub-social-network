@@ -1,5 +1,7 @@
 # SocialPulse
 
+> **Maintained by [Jennita S](https://github.com/Jennita-Santhakumar)** · [LinkedIn](https://linkedin.com/in/jennitas) · jennitasanthakumar0@gmail.com
+
 A social network API and web client: posts, comments, likes, follows, and real-time
 notifications delivered over WebSocket. Built with Django REST Framework, Django
 Channels, Celery, PostgreSQL, Redis, and a React + TypeScript frontend.
@@ -198,3 +200,7 @@ Django 5, Django REST Framework, djangorestframework-simplejwt, Django Channels 
 channels-redis, Daphne, Celery + django-celery-beat, PostgreSQL 15, Redis 7,
 React 18 + TypeScript + Vite, React Router, pytest + pytest-django, ruff, ESLint,
 Docker Compose, GitHub Actions.
+
+## Credits
+
+Developed by Kabilesh Rajaselvan with contributions from Jennita S.
